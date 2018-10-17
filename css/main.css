@@ -97,20 +97,330 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /*utility classes*/
+
+    .mobile {
+      display: block;
+    }
+
+    .touchPad, .desktop {
+      display: block;
+    }
+
+   .mainBg {
+     background-color:
+   }
+
+   .secondBg {
+     background-color:
+   }
+
+   .container, .smallContainer {
+     margin: auto;
+   }
+
+   .flex {
+     display: flex;
+     flex-wrap: wrap;
+   }
+
+   .between {
+     justify-content: space-between;
+     align-items: center;
+   }
+
+   .end {
+     justify-content: flex-end;
+     align-items: center;
+   }
+
+   .row {
+     flex-direction: column;
+   }
+
+   .separateItems * {
+     margin-right: 1em;
+   }
+
+   .tCenter {
+     text-align: center;
+   }
+
+   /*Common rules*/
+
+   * {
+     font-family: 'Roboto', sans-serif;
+   }
+
+   body {
+   }
+
+   ul {
+     list-style-type: none;
+   }
+
+   h1, h2, h3, h4, h5 {
+   }
+
+   img {
+   }
+
+/* <!-- //////////////////////////////////////// START HEADER /////////////////////////////////////////////////// --> */
+
+  /* <!-- heading of the page--> */
+
+  header{
+  }
+
+  #startnav {
+  }
+
+  /* <!-- navigation on the page --> */
+
+  nav {
+  }
+
+  nav ul {
+  }
+
+  nav li {
+  }
+
+  /* <!-- icone mobile for nav --> */
+
+  button {
+  }
+
+  #imenu {
+  }
+
+  #navbar {
+  }
+
+/* <!-- //////////////////////////////////////// END HEADER /////////////////////////////////////////////////// --> */
 
 
 
+/* <!-- //////////////////////////////////////// START MAIN /////////////////////////////////////////////////// --> */
+
+/* <!-- ////////////// section home with img, name and job ////////////--> */
+
+main {
+
+}
+
+#home {
+}
+
+#home img {
+}
+
+#home h1 {
+}
+
+#home h2 {
+}
+
+#home ul {
+}
+
+#home li {
+}
+
+/* <!-- /////////////////// section about me ////////////// --> */
+
+#about {
+}
+
+/* <!-- me and CV download --> */
+
+.aboutfirst {
+}
+
+.aboutfirst h3 {
+}
+
+.aboutfirst p {
+}
+
+.aboutfirst a {
+}
+
+/* <!-- my trainings --> */
+
+.aboutseconde {
+}
+
+ /* <!-- training Simplon --> */
+
+.simplontraining {
+}
+
+.simplontraining p {
+}
+
+.simplontitle {
+}
+
+.simplontitle h4 {
+}
+
+.simplontitle h5 {
+}
+
+/* <!-- Stage in your compagny :) --> */
+
+.stage {
+}
+
+.stage p {
+}
+
+.stagetitle {
+}
+
+.stagetitle h4 {
+}
+
+.stagetitle h5 {
+}
+
+/* <!-- soon --> */
+
+
+.soontraining {
+}
+
+.soontraining p {
+}
+
+.soontitle {
+}
+
+.soontitle h4 {
+}
+
+/* <!-- ////////////// section competence acquired ///////////////--> */
+
+#competence {
+}
+
+#competence h3 {
+}
+
+/* <!-- skillbar on my capacity --> */
+
+.allskillbar {
+}
+
+.skillbar {
+}
+
+.skillbartitle {
+}
+
+.skillbarhtml {
+}
+
+.skillbarcss {
+}
+
+.skillbarphp {
+}
+
+.skillbarjava {
+}
+
+.skillbargit {
+}
+
+.skillbareng {
+}
+
+/* <!-- about me on my skill --> */
+
+.aboutskill {
+}
+
+.aboutskill i {
+}
+
+.aboutskill p {
+}
+
+/* <!-- section //////////////////my projects ////////////////--> */
+
+#projects {
+}
+
+#projects h3 {
+}
+
+.allprojets {
+}
+
+/* <!-- first project --> */
+
+.firstprojet {
+}
+
+.firstprojet a {
+}
+
+.firstprojet h4 {
+}
+
+/* <!-- seconde project --> */
+
+.secondeprojet {
+}
+
+.secondeprojet a {
+}
+
+.secondeprojet h4 {
+}
+
+/* <!-- third project --> */
+
+.thirdprojet {
+}
+
+.thirdprojet a {
+}
+
+.thirdprojet h4 {
+}
+
+/* <!-- //////////////////////section form contact ///////////////////////--> */
+
+#contact {
+}
+
+#contact h3 {
+}
+
+/* <!-- form contact --> */
+
+form {
+}
+
+input {
+}
+
+/* <!-- //////////////////////////////////////// END MAIN /////////////////////////////////////////////////// --> */
 
 
 
+/* <!-- //////////////////////////////////////// START FOOTER /////////////////////////////////////////////////// --> */
 
+footer {
+}
 
+footer h5 {
+}
 
-
-
-
-
-
+/* <!-- //////////////////////////////////////// END FOOTER /////////////////////////////////////////////////// --> */
 
 
 /* ==========================================================================

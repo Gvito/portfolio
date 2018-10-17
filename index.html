@@ -12,6 +12,7 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -21,18 +22,20 @@
 <!-- //////////////////////////////////////// START HEADER /////////////////////////////////////////////////// -->
 
 <!-- heading of the page-->
-<header id="nav">
-  <!-- icone mobile for nav -->
-  <a class="mobile"> <i id="imenu" class="fas fa-bars"></i> </a>
+<header id="startnav">
   <!-- navigation on the page -->
   <nav>
-    <ul>
-      <li> <a href="#nav" title="Accueil">Accueil</a> </li>
-      <li> <a href="#about" title="A Propos">A propos</a> </li>
-      <li> <a href="#competence" title="Compétences">Compétences</a> </li>
-      <li> <a href="#projects" title="Projets">Projets</a> </li>
-      <li> <a href="#contact" title="Contact">Contact</a> </li>
-    </ul>
+    <!-- icone mobile for nav -->
+    <button class="mobile" data-target="#navbar"> <i id="imenu" class="fas fa-bars"></i> </button>
+    <div id="navbar">
+      <ul class="touchPad" class="desktop">
+        <li> <a href="#startnav" title="Accueil">Accueil</a> </li>
+        <li> <a href="#about" title="A Propos">A propos</a> </li>
+        <li> <a href="#competence" title="Compétences">Compétences</a> </li>
+        <li> <a href="#projects" title="Projets">Projets</a> </li>
+        <li> <a href="#contact" title="Contact">Contact</a> </li>
+      </ul>
+    </div>
   </nav>
 </header>
 
@@ -43,7 +46,7 @@
  <!-- section home with img, name and job -->
  <section id="home">
    <!-- picture home -->
-   <img src="img/Joffrey MrGetsuga.png" alt="img home">
+   <img src="img/JoffreyMrGetsuga.png" alt="img home">
    <!-- my name -->
    <h1> Gino Vito </h1>
    <!-- job select -->
@@ -71,7 +74,7 @@
        qdkqdpojqkdqojdojdqposkjdpoqjsdpqdpoqjdpqjdodnjqkdpqndp qndqpdqndp
      </p>
      <!-- button for CV download -->
-     <a href="img/CV Gino.pdf"> Télécharger mon CV </a>
+     <a href="img/CVGino.pdf"> Télécharger mon CV </a>
    </div>
    <!-- my trainings -->
    <div class="aboutseconde">
@@ -102,12 +105,11 @@
          qdkqdpojqkdqojdojdqposkjdpoqjsdpqdpoqjdpqjdodnjqkdpqndp qndqpdqndp</p>
        <div class="soontitle">
          <h4>à venir</h4>
-         <h5></h5>
        </div>
      </article>
    </div>
  </section>
-<!-- competence acquired -->
+<!-- section competence acquired -->
  <section id="competence">
    <!-- title competence -->
    <h3> Compétences </h3>
@@ -116,45 +118,45 @@
      <!-- skillbar html-->
      <div class="skillbar">
        <span class="skillbartitle" style="background: #84243b;"> HTML 5</span>
-       <p class="skillbar-bar" style="background: rgb(132, 36, 59) none repeat scroll 0% 0%; width: 85%;"></p>
+       <p class="skillbarhtml" style="background: rgb(132, 36, 59) none repeat scroll 0% 0%; width: 85%;"></p>
      </div>
      <!-- skillbar css-->
      <div class="skillbar">
        <span class="skillbartitle"> CSS </span>
-       <p class="skillbar-bar"></p>
+       <p class="skillbarcss"></p>
      </div>
      <!-- skillbar php-->
      <div class="skillbar">
        <span class="skillbartitle"> PHP </span>
-       <p class="skillbar-bar"></p>
+       <p class="skillbarphp"></p>
      </div>
      <!-- skillbar javascript-->
      <div class="skillbar">
        <span class="skillbartitle"> Javascript </span>
-       <p class="skillbar-bar"></p>
+       <p class="skillbarjava"></p>
      </div>
      <!-- skillbar git/github-->
      <div class="skillbar">
        <span class="skillbartitle"> Git / Github </span>
-       <p class="skillbar-bar"></p>
+       <p class="skillbargit"></p>
      </div>
      <!-- skillbar anglais -->
      <div class="skillbar">
        <span class="skillbartitle"> Anglais </span>
-       <p class="skillbar-bar"></p>
+       <p class="skillbareng"></p>
      </div>
    </div>
    <!-- about me on my skill -->
    <div class="aboutskill">
-     <img>
+     <i class="fab fa-html5"></i>
      <p>qdjoiqjdoq qsjdqpokdqpsojd qpojdkqpjdqojd qspoj dpqj dpq <br>
        pjdpqjdqpokdpqojdpqdkpoqjdpqojdqĵdpqjdjqpojdqpojsdpqjdpqojsdqkns,cqo <br>
        qdkqdpojqkdqojdojdqposkjdpoqjsdpqdpoqjdpqjdodnjqkdpqndp qndqpdqndp
      </p>
-     <img>
+     <i class="fas fa-book"></i>
    </div>
  </section>
-<!-- my projects -->
+<!-- section my projects -->
  <section id="projects">
    <!-- title project -->
    <h3> Projets</h3>
@@ -162,25 +164,25 @@
    <div class="allprojets">
      <!-- first project -->
      <article class="firstprojet">
-       <a href="https://github.com/Gvito/E-commerce-TerreDeGeek"><img src="img/tdg.png" alt="tdg" width="200vh" height="200vh">
+       <a href="https://github.com/Gvito/E-commerce-TerreDeGeek"><img src="img/tdg.png" alt="tdg" width="200" height="200">
        </a>
        <h4> TerreDeGeek (en formation)</h4>
      </article>
      <!-- seconde project -->
      <article class="secondeprojet">
-       <a href="https://github.com/Gvito/PA-Twitter"><img src="img/patwitter.png" alt="patwitter" width="200vh" height="200vh">
+       <a href="https://github.com/Gvito/PA-Twitter"><img src="img/patwitter.png" alt="patwitter" width="200" height="200">
        </a>
-       <h4> Page d'accueil twitter (en formation)</h4>
+       <h4> Page d'accueil Twitter (en formation)</h4>
      </article>
      <!-- third project -->
      <article class="thirdprojet">
-       <a href="https://github.com/Gvito/Page-Home-p-tisserie"><img src="img/patisserie.png" alt="patisserie" width="200vh" height="200vh">
+       <a href="https://github.com/Gvito/Page-Home-p-tisserie"><img src="img/patisserie.png" alt="patisserie" width="200" height="200">
        </a>
        <h4> Page d'accueil Pâtisserie (en formation) </h4>
      </article>
    </div>
  </section>
- <!-- form contact -->
+ <!-- section form contact -->
  <section id="contact">
    <!-- title contact -->
    <h3>Contact</h3>
