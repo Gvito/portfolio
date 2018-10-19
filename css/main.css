@@ -163,26 +163,42 @@ textarea {
 
   header{
     background-color: red;
-  }
-
-  #startnav {
+    padding: 0.1em;
   }
 
   /* <!-- navigation on the page --> */
 
-  nav {
+  #main_nav {
   }
 
-  nav ul {
+  nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
   }
 
   nav li {
+    display: inline;
+  }
+
+  nav li a {
+    padding: 1em 1em;
+    color: white;
+    line-height: 1em ;
+    text-align: center ;
+    text-decoration: none ;
+  }
+
+  nav li a:hover, #navigation li a:focus, #navigation li a:active {
+     color: #b7b5e4;
   }
 
   /* <!-- icone mobile for nav --> */
 
   button {
     padding: 0.3em 0.6em;
+    margin: 0.5em;
   }
 
   #imenu {
@@ -274,6 +290,10 @@ main {
   text-align: center;
 }
 
+.aboutseconde h3 {
+  margin-top: 5em;
+}
+
  /* <!-- training Simplon --> */
 
 .simplontraining {
@@ -354,33 +374,32 @@ main {
 
 .skillbar {
   position: relative;
-margin: 15px 0;
-width: 100%;
-background: #edffec;
-height: 25px;
-border-radius: 50px;
+  margin: 15px 0;
+  width: 100%;
+  background: #edffec;
+  height: 25px;
+  border-radius: 50px;
 }
 
 .skillbartitle {
   background: #61e786;
   position: absolute;
-top: 0;
-left: 0;
-width: 110px;
-font-weight: 700;
-font-size: 0.8em;
-color: #ffffff;
-border-top-left-radius: 25px;
-border-bottom-left-radius: 25px;
-/* padding: 0 20px; */
-height: 25px;
-line-height: 25px;
+  top: 0;
+  left: 0;
+  width: 110px;
+  font-weight: 700;
+  font-size: 0.8em;
+  color: #ffffff;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  height: 25px;
+  line-height: 25px;
 }
 
 .skillbarhtml {
-height: 25px;
-border-top-left-radius: 25px;
-border-bottom-left-radius: 25px;
+  height: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 
 .skillbarcss {
@@ -533,9 +552,9 @@ input, textarea {
 }
 
 input[type=text], textarea{
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical
 }
 
 textarea {
@@ -548,8 +567,6 @@ input[type=submit]{
 
 input[type=submit]:hover {
 }
-
-
 
 /* <!-- //////////////////////////////////////// END MAIN /////////////////////////////////////////////////// --> */
 
@@ -568,6 +585,27 @@ footer h5 {
 
 /* <!-- //////////////////////////////////////// END FOOTER /////////////////////////////////////////////////// --> */
 
+
+/* ////////////////////// START MEDIA QUERIES 600px //////////////////////// */
+
+@media screen and (min-width: 600px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+}
+/* ////////////////////// END MEDIA QUERIES 600px //////////////////////// */
+
+/* ////////////////////// START MEDIA QUERIES 1200px //////////////////////// */
+
+@@media screen and (min-width: 1200px) {
+
+}
+
+/* ////////////////////// END MEDIA QUERIES 1200px //////////////////////// */
 
 /* ==========================================================================
    Helper classes
