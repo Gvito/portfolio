@@ -13,6 +13,7 @@
   <!-- Place favicon.ico in the root directory -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -22,13 +23,12 @@
 <!-- //////////////////////////////////////// START HEADER /////////////////////////////////////////////////// -->
 
 <!-- heading of the page-->
-<header>
+<header id="myHeader">
   <!-- navigation on the page -->
-  <nav id="main_nav">
-    <!-- icone mobile for nav -->
-    <button href="main_nav" class="mobile" data-target="#navbar"> <i id="imenu" class="fas fa-bars"></i>
-    </button>
-    <div id="navbar">
+  <nav class="topnav" id="myTopnav">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+     <i class="fa fa-bars"></i>
+    </a>
       <ul class="desktop">
         <li> <a href="#main" title="Accueil">Accueil</a> </li>
         <li> <a href="#about" title="A Propos">A propos</a> </li>
@@ -36,7 +36,6 @@
         <li> <a href="#projects" title="Projets">Projets</a> </li>
         <li> <a href="#contact" title="Contact">Contact</a> </li>
       </ul>
-    </div>
   </nav>
 </header>
 
@@ -83,9 +82,8 @@
      <h3 class="mobile">Formations</h3>
      <!-- training Simplon -->
      <article class="simplontraining">
-       <p>qdjoi qjdoq qsjdq pokdq psojd qpo jdkqpjd qojd qspoj dpqj dpq
-         pjdpqjdqpokdp qojdpqdk poqjdpq ojdqĵdpq jdjqp oj dqpojs dpqjdpqo jsdqkns,cqo
-         qdkqdpo jqkdq ojdojd qpos kjdpo qjsdp qdpoq jdpqj dodnjqk dpqndp qndqp dqndp</p>
+       <p>Dans cette formation, j'ai appris les fonctionnalités d'un site internet, comment le réaliser avec les outils adéquates.
+       </p>
        <div class="simplontitle">
          <h4>Développeur Web - <br> Simplon Roubaix</h4>
          <h5>2018-2019 / Formation 7 mois à Roubaix</h5>
@@ -97,9 +95,9 @@
          <h4>Stage dans <br> vôtre entreprise !</h4>
          <h5>2019 / Stage 1 mois</h5>
        </div>
-       <p>djoi qjdoq qsjdq pokdq psojd qpo jdkqpjd qojd qspoj dpqj dpq
-         pjdpqjdqpokdp qojdpqdk poqjdpq ojdqĵdpq jdjqp oj dqpojs dpqjdpqo jsdqkns,cqo
-         qdkqdpo jqkdq ojdojd qpos kjdpo qjsdp qdpoq jdpqj dodnjqk dpqndp qndqp dqndp</p>
+       <p>Je voudrai réaliser un stage dans vôtre entreprise pour améliorer mes compétences et mes
+         connaissances en langages numériques.
+       </p>
      </article>
      <!-- soon -->
      <article class="soontraining">
@@ -120,42 +118,41 @@
    <div class="compet">
    <div class="allskillbar">
      <!-- skillbar html-->
-     <div class="skillbar" data-percent="80">
+     <div class="skillbar" data-percent="70">
        <span class="skillbartitle"> HTML 5</span>
-       <p class="skillbarhtml" style="background: #61e786 none repeat scroll 0% 0%; width: 70%;"></p>
+       <p class="skillbarbar" style="background: #61e786; width: 70%;"></p>
      </div>
      <!-- skillbar css-->
-     <div class="skillbar">
+     <div class="skillbar" data-percent="50">
        <span class="skillbartitle"> CSS </span>
-       <p class="skillbarcss" style="background: #61e786 none repeat scroll 0% 0%; width: 50%;"></p>
+       <p class="skillbarbar" style="background: #61e786; width: 50%;"></p>
      </div>
      <!-- skillbar php-->
-     <div class="skillbar">
+     <div class="skillbar" data-percent="15">
        <span class="skillbartitle"> PHP </span>
-       <p class="skillbarphp" style="background: #61e786 none repeat scroll 0% 0%; width: 15%;"></p>
+       <p class="skillbarbar" style="background: #61e786; width: 15%;"></p>
      </div>
      <!-- skillbar javascript-->
-     <div class="skillbar">
+     <div class="skillbar" data-percent="10">
        <span class="skillbartitle"> Javascript </span>
-       <p class="skillbarjava" style="background: #61e786 none repeat scroll 0% 0%; width: 10%;"></p>
+       <p class="skillbarbar" style="background: #61e786; width: 10%;"></p>
      </div>
      <!-- skillbar git/github-->
-     <div class="skillbar">
+     <div class="skillbar" data-percent="45">
        <span class="skillbartitle"> Git / Github </span>
-       <p class="skillbargit" style="background: #61e786 none repeat scroll 0% 0%; width: 45%;"></p>
+       <p class="skillbarbar" style="background: #61e786; width: 45%;"></p>
      </div>
      <!-- skillbar anglais -->
-     <div class="skillbar">
+     <div class="skillbar" data-percent="30">
        <span class="skillbartitle"> Anglais </span>
-       <p class="skillbareng" style="background: #61e786 none repeat scroll 0% 0%; width: 30%;"></p>
+       <p class="skillbarbar" style="background: #61e786; width: 30%;"></p>
      </div>
    </div>
    <!-- about me on my skill -->
    <div class="aboutskill">
      <i id="idesktop"class="fas fa-laptop"></i>
-     <p>qdjoi qjdoq qsjdq pokdq psojd qpo jdkqpjd qojd qspoj dpqj dpq
-       pjdpqjdqpokdp qojdpqdk poqjdpq ojdqĵdpq jdjqp oj dqpojs dpqjdpqo jsdqkns,cqo
-       qdkqdpo jqkdq ojdojd qpos kjdpo qjsdp qdpoq jdpqj dodnjqk dpqndp qndqp dqndp
+     <p>Après mes études scolaires, j'ai réalisé une formation de Développeur Web pour
+       acquérir de bonne connaissance en langage informatique et connaître le monde du Numérique.
      </p>
      <i id="ibook"class="fas fa-book"></i>
    </div>
@@ -224,7 +221,33 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <!-- navbar -->
+  <script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 
+<!-- head scroll -->
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
