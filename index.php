@@ -33,7 +33,7 @@
       <ul class="desktop">
         <li> <a href="#main" title="Accueil">Accueil</a> </li>
         <li> <a href="#navprojects" title="Projets">Projets</a> </li>
-        <li> <a href="#navabout" title="A Propos">A propos</a> </li>
+        <li> <a href="#about" title="A Propos">A propos</a> </li>
         <li> <a href="#navcompetence" title="Compétences">Compétences</a> </li>
         <li> <a href="#contact" title="Contact">Contact</a> </li>
       </ul>
@@ -182,7 +182,7 @@
      <i id="idesktop"class="fas fa-laptop"></i>
      <p>
        Je souhaite mettre en avant mes compétences acquises pour l'obtention
-       d'un stage à fin de valider ma formation de Déveleppeur Web. Ayant débuter dans ce domaine, mon but est d'apprendre d'avantage dans vôtre entreprise.
+       d'un stage afin de valider ma formation de Déveleppeur Web. Ayant débuter dans ce domaine, mon but est d'apprendre d'avantage dans vôtre entreprise.
      </p>
      <i id="ibook"class="fas fa-book"></i>
    </div>
