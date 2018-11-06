@@ -32,9 +32,9 @@
     </a>
       <ul class="desktop">
         <li> <a href="#main" title="Accueil">Accueil</a> </li>
-        <li> <a href="#navprojects" title="Projets">Projets</a> </li>
+        <li> <a href="#projects" title="Projets">Projets</a> </li>
         <li> <a href="#about" title="A Propos">A propos</a> </li>
-        <li> <a href="#navcompetence" title="Compétences">Compétences</a> </li>
+        <li> <a href="#competence" title="Compétences">Compétences</a> </li>
         <li> <a href="#contact" title="Contact">Contact</a> </li>
       </ul>
   </nav>
@@ -46,27 +46,56 @@
 <main id="main">
  <!-- section home with img, name and job -->
  <section id="home" class="home">
+   <div id="layer">
+   </div>
    <!-- picture home -->
-   <img src="img/moi.png" alt="img home" width="245" height="200">
-   <!-- my name -->
-   <h1> Gino Vito </h1>
-   <span id="navprojects"></span>
-   <!-- job select -->
-   <h2> Développeur web junior </h2>
-   <!-- social networks -->
-   <div class="iconesocial">
-     <!-- twitter -->
-     <a id="itwitter" href="https://twitter.com/Gvito_"> <i class="fab fa-twitter-square"></i> </a>
-     <!-- linkedin -->
-     <a id="ilink" href="https://www.linkedin.com/in/gino-vito-a093b916b/"> <i class="fab fa-linkedin"></i> </a>
-     <!-- github -->
-     <a id="igithub" href="https://github.com/Gvito"> <i class="fab fa-github-square"></i> </a>
+   <div id="homeContainer">
+     <img src="img/moi.png" alt="img home" width="245" height="200">
+     <!-- my name -->
+     <h1> Gino Vito </h1>
+     <!-- job select -->
+     <h2> Développeur web junior </h2>
+     <!-- social networks -->
+     <div class="iconesocial">
+       <!-- twitter -->
+       <a id="itwitter" href="https://twitter.com/Gvito_"> <i class="fab fa-twitter-square"></i> </a>
+       <!-- linkedin -->
+       <a id="ilink" href="https://www.linkedin.com/in/gino-vito-a093b916b/"> <i class="fab fa-linkedin"></i> </a>
+       <!-- github -->
+       <a id="igithub" href="https://github.com/Gvito"> <i class="fab fa-github-square"></i> </a>
+     </div>
    </div>
  </section>
  <!-- section my projects -->
   <section id="projects">
     <!-- title project -->
-    <h3> Projets</h3>
+    <h3> Projets back</h3>
+    <!-- all projects -->
+    <div class="allprojets">
+      <!-- first project -->
+      <article class="firstprojet">
+        <a href="https://github.com/Gvito/E-commerce-TerreDeGeek"><img src="img/tdg.png" alt="tdg" width="200" height="200">
+        <h4> TerreDeGeek (en formation)</h4>
+        </a>
+      </article>
+      <!-- seconde project -->
+      <article class="secondeprojet">
+        <a href="https://github.com/Gvito/PA-Twitter"><img src="img/patwitter.png" alt="patwitter" width="200" height="200">
+        <h4> Page d'accueil Twitter (en formation)</h4>
+        </a>
+      </article>
+      <!-- third project -->
+      <article class="thirdprojet">
+        <a href="https://github.com/Gvito/Page-Home-p-tisserie"><img src="img/patisserie.png" alt="patisserie" width="200" height="200">
+        <h4> Page d'accueil Pâtisserie Responsive (en formation) </h4>
+        </a>
+        <!-- <span id="navabout"></span> -->
+      </article>
+    </div>
+
+    <hr id="separator">
+
+    <h3> Projets Front</h3>
     <!-- all projects -->
     <div class="allprojets">
       <!-- first project -->

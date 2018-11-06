@@ -150,7 +150,15 @@ textarea {
    }
 
    h3 {
-     border: solid 1px #666;
+     font-family: 'Dancing Script';
+     font-size: 2em;
+   }
+
+   #separator {
+     width: 40%;
+     margin: auto;
+     border: 3px solid #61e786;
+     background-color: #61e786;
    }
 
 /* <!-- //////////////////////////////////////// START HEADER /////////////////////////////////////////////////// --> */
@@ -166,6 +174,7 @@ textarea {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 100;
   }
 
   .topnav {
@@ -182,11 +191,6 @@ textarea {
     font-size: 17px;
   }
 
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
   .active {
     background-color: #4CAF50;
     color: white;
@@ -194,6 +198,14 @@ textarea {
 
   .topnav .icon {
     display: none;
+  }
+
+  #myHeader ul {
+    margin-top: 0;
+  }
+
+  #myHeader {
+    height: 8vh;
   }
 
   @media screen and (max-width: 600px) {
@@ -217,6 +229,13 @@ textarea {
       text-align: left;
     }
   }
+
+  @media screen and (min-width: 600px) {
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+  }
 /* <!-- //////////////////////////////////////// END HEADER /////////////////////////////////////////////////// --> */
 
 
@@ -231,9 +250,35 @@ main {
 }
 
 #home {
+  position: relative;
+  height: 92vh;
+  justify-content: center;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#layer {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fed99b;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+#homeContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  height: 80%;
+  width: 40%;
+  top: 10%;
+  left: 30%;
+  z-index: 2;
 }
 
 .home img {
@@ -253,7 +298,6 @@ main {
 .home h2 {
   width: 70%;
   text-align: center;
-  margin-top: auto;
   font-family: 'Lobster';
   font-family: 'Dancing Script';
 }
@@ -271,15 +315,15 @@ main {
 }
 
 #itwitter {
-  color: #00acee;
+  color: #fe654f;
 }
 
 #ilink {
-  color: #0e76a8;
+  color: #fe654f;
 }
 
 #igithub {
-  color: #171515;
+  color: #fe654f;
 }
 
 
@@ -354,18 +398,18 @@ main {
   display: none;
 }
 
-@media screen and (min-width: 400px) {
-  #about h3 {
-    max-width: 200px;
-  }
-}
-
 @media screen and (min-width: 800px) {
   #about {
     display: flex;
     align-items: center;
     margin-left: 5em;
     margin-right: 5em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #about {
+    height: 92vh;
   }
 }
 
@@ -450,20 +494,27 @@ main {
   margin-bottom: 1.5em;
 }
 
-@media screen and (min-width: 400px) {
-  #competence h3 {
-    max-width: 200px;
-  }
-}
-
 @media screen and (min-width: 800px) {
   .compet {
     align-items: center;
     justify-content: space-between;
     margin-left: 5em;
     margin-right: 5em;
-    max-width: 45%;
-    /* display: flex; */
+    display: flex;
+  }
+
+  .allskillbar {
+    width: 45%;
+  }
+
+  .aboutskill {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #competence {
+    height: 92vh;
   }
 }
 
@@ -581,6 +632,7 @@ main {
 
 #contact {
   margin: 2em;
+  height: 92vh;
 }
 
 #contact h3 {
@@ -613,17 +665,18 @@ textarea {
 
 input[type=submit]{
   width: 50%;
+  background-color: #fe654f;
+  color: white;
+  border: none;
 }
 
 @media screen and (min-width: 400px) {
-  #contact h3 {
-    max-width: 200px;
-  }
 }
 
 @media screen and (min-width: 800px) {
-  #contact {
-    max-width: 40%;
+  form {
+    width: 50%;
+    margin: auto;
   }
 }
 /* <!-- //////////////////////////////////////// END MAIN /////////////////////////////////////////////////// --> */
