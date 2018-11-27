@@ -12,6 +12,7 @@ restrictToUser()
    </div>
    <!-- picture home -->
    <div id="homeContainer">
+     <a href="logout.php" class="logout">Se déconnecter</a>
      <img src="../img/moi.png" alt="img home" width="245" height="200">
      <!-- my name -->
      <h1> Gino Vito </h1>
@@ -30,7 +31,20 @@ restrictToUser()
  </section>
  <!-- section my projects -->
   <section id="projects">
+    <?php
+      if ( isset($_FILES['fic']) ) {
+         transfert();
+      }
+    ?>
     <div class="projectBack">
+      <form enctype="multipart/form-data" action="../Model/filesTreatment.php" method="post">
+		<p>
+			<label for="nom">Nom : </label><input type="text" name="nom" id="nom" /><br />
+			<label for="description">Description : </label><textarea name="description" id="description" rows="10" cols="50"></textarea><br />
+			<label for="image">Image : </label><input type="file" name="image" id="image" /><br />
+			<label for="validation">Valider : </label><input type="submit" name="validation" id="validation" value="Envoyer" />
+		</p>
+	</form>
       <!-- title project -->
       <h3> Projets back</h3>
       <!-- all projects -->

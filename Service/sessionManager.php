@@ -9,7 +9,7 @@ function logout() {
   //We destroy the session
   session_destroy();
   //We redirect the user to the index with message
-  header("Location: Admin/formAdmin.php?success=Vous êtes déconnecté");
+  header("Location: formAdmin.php?success=Vous êtes déconnecté");
 
 }
 
