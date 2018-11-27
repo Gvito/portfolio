@@ -1,5 +1,9 @@
-<?php include "Template/header.php"; ?>
-
+<?php
+include "../Template/header.php";
+require "../Service/sessionManager.php";
+restrictToUser()
+?>
+<link rel="stylesheet" href="../css/main.css">
 <!-- //////////////////////////////////////// START MAIN /////////////////////////////////////////////////// -->
 <main id="main">
  <!-- section home with img, name and job -->
@@ -8,7 +12,7 @@
    </div>
    <!-- picture home -->
    <div id="homeContainer">
-     <img src="img/moi.png" alt="img home" width="245" height="200">
+     <img src="../img/moi.png" alt="img home" width="245" height="200">
      <!-- my name -->
      <h1> Gino Vito </h1>
      <!-- job select -->
@@ -33,19 +37,19 @@
       <div class="allprojets">
         <!-- first project -->
         <article class="firstprojet">
-          <a href="https://github.com/Gvito/E-commerce-TerreDeGeek"><img src="img/tdg.png" alt="tdg" width="200" height="200">
+          <a href="https://github.com/Gvito/E-commerce-TerreDeGeek"><img src="../img/tdg.png" alt="tdg" width="200" height="200">
           <h4> TerreDeGeek (en formation)</h4>
           </a>
         </article>
         <!-- seconde project -->
         <article class="secondeprojet">
-          <a href="https://github.com/Gvito/PA-Twitter"><img src="img/patwitter.png" alt="patwitter" width="200" height="200">
+          <a href="https://github.com/Gvito/PA-Twitter"><img src="../img/patwitter.png" alt="patwitter" width="200" height="200">
           <h4> Page d'accueil Twitter (en formation)</h4>
           </a>
         </article>
         <!-- third project -->
         <article class="thirdprojet">
-          <a href="https://github.com/Gvito/Page-Home-p-tisserie"><img src="img/patisserie.png" alt="patisserie" width="200" height="200">
+          <a href="https://github.com/Gvito/Page-Home-p-tisserie"><img src="../img/patisserie.png" alt="patisserie" width="200" height="200">
           <h4> Page d'accueil Pâtisserie Responsive (en formation) </h4>
           </a>
           <!-- <span id="navabout"></span> -->
@@ -61,19 +65,19 @@
       <div class="allprojets">
         <!-- first project -->
         <article class="firstprojet">
-          <a href="https://github.com/Gvito/E-commerce-TerreDeGeek"><img src="img/tdg.png" alt="tdg" width="200" height="200">
+          <a href="https://github.com/Gvito/E-commerce-TerreDeGeek"><img src="../img/tdg.png" alt="tdg" width="200" height="200">
           <h4> TerreDeGeek (en formation)</h4>
           </a>
         </article>
         <!-- seconde project -->
         <article class="secondeprojet">
-          <a href="https://github.com/Gvito/PA-Twitter"><img src="img/patwitter.png" alt="patwitter" width="200" height="200">
+          <a href="https://github.com/Gvito/PA-Twitter"><img src="../img/patwitter.png" alt="patwitter" width="200" height="200">
           <h4> Page d'accueil Twitter (en formation)</h4>
           </a>
         </article>
         <!-- third project -->
         <article class="thirdprojet">
-          <a href="https://github.com/Gvito/Page-Home-p-tisserie"><img src="img/patisserie.png" alt="patisserie" width="200" height="200">
+          <a href="https://github.com/Gvito/Page-Home-p-tisserie"><img src="../img/patisserie.png" alt="patisserie" width="200" height="200">
           <h4> Page d'accueil Pâtisserie Responsive (en formation) </h4>
           </a>
           <!-- <span id="navabout"></span> -->
@@ -202,4 +206,4 @@
 
 <!-- //////////////////////////////////////// END MAIN /////////////////////////////////////////////////// -->
 
-<?php include "Template/footer.php"; ?>
+<?php include "../Template/footer.php"; ?>

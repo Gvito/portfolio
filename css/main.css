@@ -153,6 +153,9 @@ textarea {
      font-family: 'Dancing Script';
      font-size: 2em;
    }
+   body {
+     margin: 0;
+   }
 
 
 /* <!-- //////////////////////////////////////// START HEADER /////////////////////////////////////////////////// --> */
@@ -678,13 +681,11 @@ textarea {
 }
 
 input[type=submit]{
-  width: 50%;
+  width: 30%;
   background-color: #fe654f;
   color: white;
   border: none;
-}
-
-@media screen and (min-width: 400px) {
+  text-align: center;
 }
 
 @media screen and (min-width: 800px) {
@@ -710,6 +711,22 @@ footer h5 {
 
 /* <!-- //////////////////////////////////////// END FOOTER /////////////////////////////////////////////////// --> */
 
+
+
+/* <!-- //////////////////////////////////////// START PAGE LOGIN /////////////////////////////////////////////////// --> */
+
+#loginAdmin {
+  height: 75.5vh;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+#loginAdmin h3 {
+  text-align: center;
+}
+
+/* <!-- //////////////////////////////////////// END PAGE LOGIN /////////////////////////////////////////////////// --> */
 
 /* ////////////////////// START MEDIA QUERIES 800px //////////////////////// */
 @media screen and (min-width: 600px) {
