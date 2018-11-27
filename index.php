@@ -28,7 +28,7 @@
   <section id="projects">
     <div class="projectBack">
       <!-- title project -->
-      <h3> Projets back</h3>
+      <h3> Projets Front</h3>
       <!-- all projects -->
       <div class="allprojets">
         <!-- first project -->
@@ -56,7 +56,7 @@
     <hr id="separator">
 
     <div class="projectBack">
-      <h3> Projets Front</h3>
+      <h3> Projets Back</h3>
       <!-- all projects -->
       <div class="allprojets">
         <!-- first project -->

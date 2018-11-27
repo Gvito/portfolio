@@ -1,11 +1,10 @@
 <?php
-require "db.php";
-
-  if(isset($_POST['validation'])) {
+if(isset($_POST['validation'])) {
 
 	 //Indique si le fichier a été téléchargé
 	 if(!is_uploaded_file($_FILES['image']['tmp_name'])) {
-		echo 'Un problème est survenu durant l opération. Veuillez réessayer !';
+     header("Location: ../Admin/indexAdmin.php?message=Un problème est survenu durant l opération. Veuillez réessayer !");
+     exit;
    }
 	 else {
 		//liste des extensions possibles
@@ -16,24 +15,29 @@ require "db.php";
 
 		//vérifie si l'extension est dans notre tableau
 		if(!in_array($extension, $extensions)) {
-			echo 'Vous devez uploader un fichier de type png, gif, jpg, jpeg.';
+      header("Location: ../Admin/indexAdmin.php?message=Vous devez uploader un fichier de type png, gif, jpg, jpeg.");
+      exit;
     }
 		else {
 
 			//on définit la taille maximale
 			define('MAXSIZE', 800000);
 			if($_FILES['image']['size'] > MAXSIZE) {
-			   echo 'Votre image est supérieure à la taille maximale de '.MAXSIZE.' octets';
+        header("Location: ../Admin/indexAdmin.php?message=Votre image est supérieur à la taille maximale de 800k octets");
+        exit;
       }
 			else {
 				//connexion à la base de données
-        $reponses = connectToDataBAse()->query('SELECT * FROM images');
-        $bdd = $reponses->fetchall();
+				try {
+					$bdd = new PDO('mysql:host=localhost;dbname=portfolio', 'phpmyadmin', 'adepsimplon05');
+				} catch (Exception $e) {
+					exit('Erreur : ' . $e->getMessage());
+				}
 
 				//Lecture du fichier
 				$image = file_get_contents($_FILES['image']['tmp_name']);
 
-				$req = $bdd->prepare("INSERT INTO images(nom, extension, description, img) VALUES(nom = ?, extention = ?, description = ?, img = ?)");
+				$req = $bdd->prepare("INSERT INTO images(nom, description, img, extension) VALUES(nom = ?, description = ?, image = ?, extension = ?)");
 				$req->execute(array(
 					'nom' => $_POST['nom'],
 					'description' => $_POST['description'],
@@ -41,8 +45,8 @@ require "db.php";
 					'type' => $_FILES['image']['type']
 					));
 
-          header("Location: formAdmin.php?message='l'insertion s est bien déroulée !");
-          exit;
+        header("Location: ../Admin/indexAdmin.php?message=l insertion s est bien déroulée !");
+        exit;
 			 }
 		  }
 	  }
