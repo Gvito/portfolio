@@ -1,46 +1,4 @@
-<!doctype html>
-<html class="no-js" lang="fr">
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Gino Vito - Développeur Web Junior - Portfolio</title>
-  <meta name="description" content="Portfolio de Gino VITO à la recherche d'un stage/emploi en tant que Développeur Web !">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lobster" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-</head>
-
-<body>
-
-<!-- //////////////////////////////////////// START HEADER /////////////////////////////////////////////////// -->
-
-<!-- heading of the page-->
-<header id="myHeader">
-  <!-- navigation on the page -->
-  <nav class="topnav" id="myTopnav">
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-     <i class="fa fa-bars"></i>
-    </a>
-      <ul class="desktop">
-        <li> <a href="#main" title="Accueil">Accueil</a> </li>
-        <li> <a href="#projects" title="Projets">Projets</a> </li>
-        <li> <a href="#about" title="A Propos">A propos</a> </li>
-        <li> <a href="#competence" title="Compétences">Compétences</a> </li>
-        <li> <a href="#contact" title="Contact">Contact</a> </li>
-      </ul>
-  </nav>
-</header>
-
-<!-- //////////////////////////////////////// END HEADER /////////////////////////////////////////////////// -->
+<?php include "Template/header.php"; ?>
 
 <!-- //////////////////////////////////////// START MAIN /////////////////////////////////////////////////// -->
 <main id="main">
@@ -68,55 +26,59 @@
  </section>
  <!-- section my projects -->
   <section id="projects">
-    <!-- title project -->
-    <h3> Projets back</h3>
-    <!-- all projects -->
-    <div class="allprojets">
-      <!-- first project -->
-      <article class="firstprojet">
-        <a href="https://github.com/Gvito/E-commerce-TerreDeGeek"><img src="img/tdg.png" alt="tdg" width="200" height="200">
-        <h4> TerreDeGeek (en formation)</h4>
-        </a>
-      </article>
-      <!-- seconde project -->
-      <article class="secondeprojet">
-        <a href="https://github.com/Gvito/PA-Twitter"><img src="img/patwitter.png" alt="patwitter" width="200" height="200">
-        <h4> Page d'accueil Twitter (en formation)</h4>
-        </a>
-      </article>
-      <!-- third project -->
-      <article class="thirdprojet">
-        <a href="https://github.com/Gvito/Page-Home-p-tisserie"><img src="img/patisserie.png" alt="patisserie" width="200" height="200">
-        <h4> Page d'accueil Pâtisserie Responsive (en formation) </h4>
-        </a>
-        <!-- <span id="navabout"></span> -->
-      </article>
+    <div class="projectBack">
+      <!-- title project -->
+      <h3> Projets back</h3>
+      <!-- all projects -->
+      <div class="allprojets">
+        <!-- first project -->
+        <article class="firstprojet">
+          <a href="https://github.com/Gvito/E-commerce-TerreDeGeek"><img src="img/tdg.png" alt="tdg" width="200" height="200">
+          <h4> TerreDeGeek (en formation)</h4>
+          </a>
+        </article>
+        <!-- seconde project -->
+        <article class="secondeprojet">
+          <a href="https://github.com/Gvito/PA-Twitter"><img src="img/patwitter.png" alt="patwitter" width="200" height="200">
+          <h4> Page d'accueil Twitter (en formation)</h4>
+          </a>
+        </article>
+        <!-- third project -->
+        <article class="thirdprojet">
+          <a href="https://github.com/Gvito/Page-Home-p-tisserie"><img src="img/patisserie.png" alt="patisserie" width="200" height="200">
+          <h4> Page d'accueil Pâtisserie Responsive (en formation) </h4>
+          </a>
+          <!-- <span id="navabout"></span> -->
+        </article>
+      </div>
     </div>
 
     <hr id="separator">
 
-    <h3> Projets Front</h3>
-    <!-- all projects -->
-    <div class="allprojets">
-      <!-- first project -->
-      <article class="firstprojet">
-        <a href="https://github.com/Gvito/E-commerce-TerreDeGeek"><img src="img/tdg.png" alt="tdg" width="200" height="200">
-        <h4> TerreDeGeek (en formation)</h4>
-        </a>
-      </article>
-      <!-- seconde project -->
-      <article class="secondeprojet">
-        <a href="https://github.com/Gvito/PA-Twitter"><img src="img/patwitter.png" alt="patwitter" width="200" height="200">
-        <h4> Page d'accueil Twitter (en formation)</h4>
-        </a>
-      </article>
-      <!-- third project -->
-      <article class="thirdprojet">
-        <a href="https://github.com/Gvito/Page-Home-p-tisserie"><img src="img/patisserie.png" alt="patisserie" width="200" height="200">
-        <h4> Page d'accueil Pâtisserie Responsive (en formation) </h4>
-        </a>
-        <!-- <span id="navabout"></span> -->
-      </article>
+    <div class="projectBack">
+      <h3> Projets Front</h3>
+      <!-- all projects -->
+      <div class="allprojets">
+        <!-- first project -->
+        <article class="firstprojet">
+          <a href="https://github.com/Gvito/E-commerce-TerreDeGeek"><img src="img/tdg.png" alt="tdg" width="200" height="200">
+          <h4> TerreDeGeek (en formation)</h4>
+          </a>
+        </article>
+        <!-- seconde project -->
+        <article class="secondeprojet">
+          <a href="https://github.com/Gvito/PA-Twitter"><img src="img/patwitter.png" alt="patwitter" width="200" height="200">
+          <h4> Page d'accueil Twitter (en formation)</h4>
+          </a>
+        </article>
+        <!-- third project -->
+        <article class="thirdprojet">
+          <a href="https://github.com/Gvito/Page-Home-p-tisserie"><img src="img/patisserie.png" alt="patisserie" width="200" height="200">
+          <h4> Page d'accueil Pâtisserie Responsive (en formation) </h4>
+          </a>
+          <!-- <span id="navabout"></span> -->
+        </article>
+      </div>
     </div>
   </section>
  <!-- section about me -->
@@ -240,14 +202,7 @@
 
 <!-- //////////////////////////////////////// END MAIN /////////////////////////////////////////////////// -->
 
-<!-- //////////////////////////////////////// START FOOTER /////////////////////////////////////////////////// -->
-
-<footer>
-  <!-- Coryright -->
-  <h5> © 2018 Gino Vito </h5>
-</footer>
-
-<!-- //////////////////////////////////////// END FOOTER  /////////////////////////////////////////////////// -->
+<?php include "Template/footer.php"; ?>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

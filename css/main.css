@@ -154,12 +154,6 @@ textarea {
      font-size: 2em;
    }
 
-   #separator {
-     width: 40%;
-     margin: auto;
-     border: 3px solid #61e786;
-     background-color: #61e786;
-   }
 
 /* <!-- //////////////////////////////////////// START HEADER /////////////////////////////////////////////////// --> */
 
@@ -282,7 +276,6 @@ main {
 }
 
 .home img {
-  padding-top: 2em;
   width: 40vh;
   height: 35vh;
 }
@@ -293,6 +286,7 @@ main {
   margin-bottom: 0.2em;
   font-family: 'Lobster';
   font-family: 'Dancing Script';
+  font-size: 1.5em;
 }
 
 .home h2 {
@@ -300,6 +294,7 @@ main {
   text-align: center;
   font-family: 'Lobster';
   font-family: 'Dancing Script';
+  font-size: 1.3em;
 }
 
 .iconesocial {
@@ -311,7 +306,7 @@ main {
 }
 
 .iconesocial a {
-  margin: auto;
+  padding: 0.3em;
 }
 
 #itwitter {
@@ -324,6 +319,15 @@ main {
 
 #igithub {
   color: #fe654f;
+}
+
+@media screen and (min-width: 800px) {
+  .home h1 {
+    font-size: 2em;
+  }
+  .home h2 {
+    font-size: 1.8em;
+  }
 }
 
 
@@ -526,6 +530,9 @@ main {
   text-align: center;
   background-color: #fccb77;
 }
+.projectBack {
+  margin-bottom: 15vh;
+}
 
 #projects h3 {
   margin: 2em;
@@ -575,6 +582,13 @@ main {
 
 .thirdprojet h4 {
   margin-top: 0.5em;
+}
+
+#separator {
+  width: 40%;
+  margin: auto;
+  border: 3px solid #61e786;
+  background-color: #61e786;
 }
 
 @media screen and (min-width: 400px) {
@@ -632,7 +646,7 @@ main {
 
 #contact {
   margin: 2em;
-  height: 92vh;
+  height: 70vh;
 }
 
 #contact h3 {
