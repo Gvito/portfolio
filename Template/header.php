@@ -17,6 +17,7 @@
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lobster" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>

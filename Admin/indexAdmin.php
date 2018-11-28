@@ -1,10 +1,8 @@
 <?php
-include "../Template/header.php";
 require "../Service/sessionManager.php";
-require "../Model/filesTreatment.php";
+include "../Template/header.php";
 restrictToUser()
 ?>
-<link rel="stylesheet" href="../css/main.css">
 <!-- //////////////////////////////////////// START MAIN /////////////////////////////////////////////////// -->
 <main id="main">
  <!-- section home with img, name and job -->
@@ -34,17 +32,17 @@ restrictToUser()
   <section id="projects">
     <div class="content">
       <?php
-          while ($row = mysqli_fetch_array($result)) {
-            echo "<div id='img_div'>";
-              echo "<img src='../img/".$row['image']."' >";
-              echo "<p>".$row['image_text']."</p>";
-            echo "</div>";
-          }
+
       ?>
-        <form enctype="multipart/form-data" action="../Model/filesTreatment.php" method="POST">
-          <input type="hidden" name="size" value="1000000">
+        <form enctype="multipart/form-data" action="filesTreatment.php" method="POST">
+          <input type="text" name="tilte">
+          <textarea name="description"></textarea>
+          <select name="type">
+            <option value="front">Front</option>
+            <option value="back">Back</option>
+          </select>
           <div>
-            <input type="file" name"image_update">
+            <input type="file" name="image_update">
           </div>
           <div>
             <textarea name="text" cols="40" rows="4" placeholder="Say something about this image..."></textarea>
