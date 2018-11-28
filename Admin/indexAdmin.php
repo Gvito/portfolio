@@ -31,25 +31,22 @@ restrictToUser()
  <!-- section my projects -->
   <section id="projects">
     <div class="content">
-      <?php
-
-      ?>
         <form enctype="multipart/form-data" action="filesTreatment.php" method="POST">
-          <input type="text" name="tilte">
-          <textarea name="description"></textarea>
-          <select name="type">
-            <option value="front">Front</option>
-            <option value="back">Back</option>
-          </select>
-          <div>
-            <input type="file" name="image_update">
-          </div>
-          <div>
-            <textarea name="text" cols="40" rows="4" placeholder="Say something about this image..."></textarea>
-          </div>
-          <div>
-            <input type="submit" name="upload" value="Upload Image">
-          </div>
+            <input type="text" name="title">
+            <textarea name="description"></textarea>
+            <select name="type">
+              <option value="front">Front</option>
+              <option value="back">Back</option>
+            </select>
+            <div>
+              <input type="file" name="image_update">
+            </div>
+            <div>
+              <textarea name="text" cols="40" rows="4" placeholder="Say something about this image..."></textarea>
+            </div>
+            <div>
+              <input type="submit" name="upload" value="Upload Image">
+            </div>
   	    </form>
     </div>
       <!-- title project -->
