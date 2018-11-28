@@ -1,6 +1,7 @@
 <?php
 include "../Template/header.php";
 require "../Service/sessionManager.php";
+require "../Model/filesTreatment.php";
 restrictToUser()
 ?>
 <link rel="stylesheet" href="../css/main.css">
@@ -31,20 +32,28 @@ restrictToUser()
  </section>
  <!-- section my projects -->
   <section id="projects">
-    <?php
-      if ( isset($_FILES['fic']) ) {
-         transfert();
-      }
-    ?>
-    <div class="projectBack">
-      <form enctype="multipart/form-data" action="../Model/filesTreatment.php" method="post">
-		<p>
-			<label for="nom">Nom : </label><input type="text" name="nom" id="nom" /><br />
-			<label for="description">Description : </label><textarea name="description" id="description" rows="10" cols="50"></textarea><br />
-			<label for="image">Image : </label><input type="file" name="image" id="image" /><br />
-			<label for="validation">Valider : </label><input type="submit" name="validation" id="validation" value="Envoyer" />
-		</p>
-	</form>
+    <div class="content">
+      <?php
+          while ($row = mysqli_fetch_array($result)) {
+            echo "<div id='img_div'>";
+              echo "<img src='../img/".$row['image']."' >";
+              echo "<p>".$row['image_text']."</p>";
+            echo "</div>";
+          }
+      ?>
+        <form enctype="multipart/form-data" action="../Model/filesTreatment.php" method="POST">
+          <input type="hidden" name="size" value="1000000">
+          <div>
+            <input type="file" name"image_update">
+          </div>
+          <div>
+            <textarea name="text" cols="40" rows="4" placeholder="Say something about this image..."></textarea>
+          </div>
+          <div>
+            <input type="submit" name="upload" value="Upload Image">
+          </div>
+  	    </form>
+    </div>
       <!-- title project -->
       <h3> Projets Front</h3>
       <!-- all projects -->
@@ -69,7 +78,6 @@ restrictToUser()
           <!-- <span id="navabout"></span> -->
         </article>
       </div>
-    </div>
 
     <hr id="separator">
 
