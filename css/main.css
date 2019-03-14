@@ -159,14 +159,14 @@ textarea {
 
   header {
     background-color: #fe654f;
-    padding: 0.1em;
+    padding: auto;
   }
 
-  .sticky {
+  /* .sticky {
     position: fixed;
     top: 0;
     width: 100%;
-  }
+  } */
 
   .topnav {
     overflow: hidden;
@@ -298,7 +298,7 @@ main {
 }
 
 .aboutfirst h3 {
-  margin: 2em;
+  margin: auto;
 }
 
 .aboutfirst p {
@@ -374,17 +374,21 @@ main {
 #competence {
   text-align: center;
   background-color: #fccb77;
-  padding-top: 0.5em;
+  padding-top: 5vh;
   padding-bottom: 0.5em;
 }
 
 #competence h3 {
-  text-align: center;
-  margin: 2em;
+  margin: auto;
 }
 
 
 /* <!-- skillbar on my capacity --> */
+
+.compet {
+  display: table-cell;
+  vertical-align: middle
+}
 
 .allskillbar {
   margin-top: 2em;
@@ -421,14 +425,17 @@ main {
   height: 25px;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
+  background: #61e786;
 }
 
 /* <!-- about me on my skill --> */
 
 .aboutskill {
-  margin: 2em;
+  margin: auto;
+  margin-bottom: 5vh;
   display: flex;
   flex-direction: column;
+  width: 55%;
 }
 
 .aboutskill i {
@@ -470,14 +477,14 @@ main {
 /* <!--////////////////// section my projects ////////////////--> */
 
 #projects {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
   text-align: center;
   background-color: #fccb77;
+  height: 135vh;
+  padding-top: 5vh;
 }
 
 #projects h3 {
-  margin: 2em;
+  margin: auto;
 }
 
 #projects h4 {
@@ -487,43 +494,35 @@ main {
   font-size: 10px;
 }
 
+#projects img {
+  width: 50vh;
+  height: 30vh;
+}
+
+.allprojets {
+  padding-top: 3em;
+}
+
 .allprojets a {
   text-decoration: none;
 }
 
-/* <!-- first project --> */
-
-.firstprojet img {
-  width: 50vh;
-  height: 30vh;
+.oneElement {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.firstprojet h4 {
-  margin-top: 0.5em;
-  margin-bottom: 2em;
+.twoElement {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-/* <!-- seconde project --> */
-
-.secondeprojet img {
-  width: 50vh;
-  height: 30vh;
-}
-
-.secondeprojet h4 {
-  margin-top: 0.5em;
-  margin-bottom: 2em;
-}
-
-/* <!-- third project --> */
-
-.thirdprojet img {
-  width: 50vh;
-  height: 30vh;
-}
-
-.thirdprojet h4 {
-  margin-top: 0.5em;
+.threeElement {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 @media screen and (min-width: 400px) {
@@ -534,42 +533,13 @@ main {
 
 @media screen and (min-width: 800px) {
 
+  #projects img {
+    width: 50vh;
+    height: 30vh;
+  }
+
   .iconesocial{
     max-width: 30%;
-  }
-
-  .allprojets {
-    display: flex;
-    justify-content: space-around;
-    margin: 3em;
-  }
-
-  .firstprojet h4 {
-    margin: 0;
-  }
-  .firstprojet img {
-    width: 50vh;
-    height: 30vh;
-  }
-
-  .secondeprojet h4 {
-    margin-top: 0em;
-    margin-bottom: 0em;
-  }
-
-  .secondeprojet img {
-    width: 50vh;
-    height: 30vh;
-  }
-
-  .thirdprojet h4 {
-    margin-top: 0em;
-    margin-bottom: 0;
-  }
-
-  .thirdprojet img {
-    width: 50vh;
-    height: 30vh;
   }
 
   #projects h4 {
@@ -580,11 +550,15 @@ main {
 /* <!-- //////////////////////section form contact ///////////////////////--> */
 
 #contact {
-  margin: 2em;
+  text-align: center;
+  margin: auto;
+  padding: 5vh;
 }
 
 #contact h3 {
   text-align: center;
+  margin: auto;
+  margin-bottom: 5vh;
 }
 
 /* <!-- form contact --> */
